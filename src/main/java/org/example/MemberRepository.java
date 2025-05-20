@@ -9,4 +9,5 @@ import java.util.List;
 public interface MemberRepository extends JpaRepository<MemberModel, Long> {
     @Override
     List<MemberModel> findAll();
+    MemberModel findByUsername(String username);
 }
